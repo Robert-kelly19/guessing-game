@@ -32,6 +32,11 @@ body {
   font-size: 35px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 input {
   width: 350px;
   height: 24px;
@@ -42,12 +47,43 @@ input {
   margin-bottom: 15px;
 }
 
-button {
-  width: 15%;
+form button {
+  width: 25%;
   height: 25px;
   color: white;
   background-color: black;
   border: solid black 1px;
   font-size: larger;
+  margin-left: 35%;
   border-radius: 5%;
+}
+
+#result {
+  font-size: x-large;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 50%;
+  }
+
+  .container h1 {
+    font-size: 50px;
+  }
+
+  .loy {
+    font-size: 17px;
+  }
+
+  input {
+    width: 270px;
+  }
+
+  button {
+    width: 25%;
+  }
 }
